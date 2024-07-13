@@ -11,5 +11,5 @@ COMMANDS_DIRECTORY: Final[str] = "utils/commands"
 SRC_THEME_FILE: Final[str] = "hush/colors.toml"
 SRC_VARIANTS_DIRECTORY: Final[str] = "hush/variants"
 
-DIST_THEMES_DIRECTORY: Final[str] = "themes"
+DIST_THEMES_DIRECTORY: Final[str] = ""
 DIST_THEME_FILE_EXTENSION: Final[str] = ".toml"
