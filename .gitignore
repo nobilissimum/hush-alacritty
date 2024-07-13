@@ -1,0 +1,8 @@
+# Python
+Pipfile.lock
+__pycache__
+*.pyc
+.venv
+
+# Per-machine state
+.env
