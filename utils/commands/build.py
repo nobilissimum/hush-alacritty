@@ -54,9 +54,11 @@ def create_theme_file(config: dict, name: str) -> dict:
         },
     }
 
-    theme_filepath: Path = Path(
-        f"{Path(DIST_THEMES_DIRECTORY) / name}{DIST_THEME_FILE_EXTENSION}",
-    )
+    theme_dirpath: Path = Path(DIST_THEMES_DIRECTORY)
+    theme_filepath: Path = (theme_dirpath / name).with_suffix(DIST_THEME_FILE_EXTENSION)
+    if not theme_dirpath.exists():
+        theme_dirpath.mkdir()
+
     with theme_filepath.open("w") as file:
         toml.dump(dist_config, file)
 
