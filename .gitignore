@@ -2,7 +2,11 @@
 Pipfile.lock
 __pycache__
 *.pyc
+.ruff_cache
 .venv
 
 # Per-machine state
 .env
+
+# Distributable
+dist
